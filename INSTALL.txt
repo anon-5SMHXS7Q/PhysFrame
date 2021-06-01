@@ -1,0 +1,33 @@
+FSE2021 Artifact Submission INSTALL
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+STEP ONE:
+Install Docker. The Dockerfile for physframe has been tested with Ubuntu 16.04.
+
+
+STEP TWO:
+From the command line, build physframe with docker:
+
+docker build . -t physframe
+
+
+TEST THE INSTALLATION:
+From a terminal in the root directory, enter:
+
+docker run -v "$(pwd)"/data/gps_umd:/gps_umd physframe /gps_umd
+
+You should see the output of physframe, including:
+
+= = = = = = = = = = = = = = = = = = = = 
+INCONSISTENCIES:
+= = = = = = = = = = = = = = = = = = = = 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+MISSING_FRAME
+Missing frame id for variable fix on line 191 (gpsd_client/src/client.cpp).
+= = = = = = = = = = = = = = = = = = = =
+
+
+This means physframe is installed and ready to run.
