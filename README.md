@@ -18,9 +18,10 @@ This repository contains the following files and folders:
 * STATUS.txt : Describes the ACM artifact badges sought for this artifact.
 * REQUIREMENTS.txt : Describes the hardware and software requirements.
 * INSTALL.txt : Describes how to install PHYSFRAME using Docker and a minimal working example.
+* HOWTO.txt: Describes how to use PHYSFRAME with the provided data.
 * Dockerfile : a Docker install file for PHYSFRAME.
 * requirements.txt : List of python dependencies required by PHYSFRAME. Referenced by the Dockerfile.
-* src/ : The python source code for PHYSFRAME, files containing implicit frame conventions, and the binary file of CPPCheck 1.80.
+* src/ : The python source code for PHYSFRAME, files containing implicit frame conventions.
 * data/ : C/C++ projects used to evaluate PHYSFRAME.
 
 

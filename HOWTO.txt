@@ -1,0 +1,27 @@
+HOW TO RUN:
+
+
+First, install PHYSFRAME using the instructions in INSTALL.txt.
+
+
+CASE-1: Find Inconsistencies:
+
+     From the command line, run physframe docker image on every ROS project directory in '/data'.
+     Replace <ROS-PROJECT-DIR> with the name of a project directory in the below command:
+
+     docker run -v "$(pwd)"/data/<ROS-PROJECT-DIR>:/<ROS-PROJECT-DIR> physframe /<ROS-PROJECT-DIR>
+
+
+CASE-2: Find Violations of Implicit Conventions for the given z-score threshold:
+
+     z=1: By default, '/src/phys_frames/linter_rules.py' file contains conventions for z=1.
+          Run CASE-1.
+
+     z=2: In '/src/phys_frames', rename 'linter_rules_2.py' file to 'linter_rules.py'.
+          Run CASE-1.
+
+     z=5: In '/src/phys_frames', rename 'linter_rules_5.py' file to 'linter_rules.py'.
+          Run CASE-1.
+
+     z=10: In '/src/phys_frames', rename 'linter_rules_10.py' file to 'linter_rules.py'.
+           Run CASE-1.

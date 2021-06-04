@@ -4,19 +4,31 @@ FSE2021 Artifact Submission INSTALL
 
 
 STEP ONE:
-Install Docker. The Dockerfile for physframe has been tested with Ubuntu 16.04.
+INSTALL CppCheck 1.80 in the root directory of the artifact repository:
+
+1. Download CppCheck 1.80 version source code zip from https://github.com/danmar/cppcheck/tree/1.80
+2. Extract source code to the root directory of the artifact repository. You should see 'cppcheck-1.80' directory.
+3. From the command line, build the source code:
+       cd cppcheck-1.80
+       make SRCDIR=build CFGDIR=cfg HAVE_RULES=no CXXFLAGS="-O2 -DNDEBUG -Wall -Wno-sign-compare -Wno-unused-function"
+
+You should see 'cppcheck' binary in the 'cppcheck-1.80' directory.
 
 
 STEP TWO:
+Install Docker. The Dockerfile for physframe has been tested with Ubuntu 16.04.
+
+
+STEP THREE:
 From the command line, build physframe with docker:
 
-docker build . -t physframe
+       docker build . -t physframe
 
 
 TEST THE INSTALLATION:
-From a terminal in the root directory, enter:
+From the command line, run physframe docker image:
 
-docker run -v "$(pwd)"/data/gps_umd:/gps_umd physframe /gps_umd
+       docker run -v "$(pwd)"/data/gps_umd:/gps_umd physframe /gps_umd
 
 You should see the output of physframe, including:
 
