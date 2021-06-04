@@ -1,3 +1,7 @@
+#The MIT License
+#Copyright (c) 2016 Issac Trotts
+
+
 from collections import namedtuple
 import re
 

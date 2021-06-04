@@ -1,3 +1,7 @@
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
+
 from mysql.connector import MySQLConnection, Error
 from configparser import ConfigParser
 

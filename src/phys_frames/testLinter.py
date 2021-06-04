@@ -1,3 +1,7 @@
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
+
 import os
 import lxml.etree as ET
 import traceback

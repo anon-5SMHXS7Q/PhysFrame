@@ -1,3 +1,7 @@
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
+
 import sys
 import os
 import fnmatch

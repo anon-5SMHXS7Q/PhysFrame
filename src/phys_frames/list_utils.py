@@ -1,3 +1,6 @@
+#The MIT License (MIT)
+#Copyright (c) 2016 Issac Trotts
+
 
 def merge_pairs(list, should_merge, merge):
     """

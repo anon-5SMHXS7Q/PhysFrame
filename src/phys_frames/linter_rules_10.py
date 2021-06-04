@@ -1,3 +1,6 @@
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
 
 def get_sig_implication_rules():
     sig_pairs = [

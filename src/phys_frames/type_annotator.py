@@ -1,3 +1,9 @@
+#Copyright (c) 2016, University of Nebraska NIMBUS LAB  John-Paul Ore jore@cse.unl.edu
+#Copyright 2018 Purdue University, University of Nebraska--Lincoln.
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
+
 from tree_walker import TreeWalker
 from symbol_helper import SymbolHelper
 #from type_helper import TypeHelper

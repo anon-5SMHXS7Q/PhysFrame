@@ -1,3 +1,9 @@
+#Copyright (c) 2016, University of Nebraska NIMBUS LAB  John-Paul Ore jore@cse.unl.edu
+#Copyright 2018 Purdue University, University of Nebraska--Lincoln.
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
+
 from frame_error_types import FrameErrorTypes
 
 

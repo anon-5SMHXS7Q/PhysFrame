@@ -1,3 +1,7 @@
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
+
 from symbol_helper import SymbolHelper, get_body
 #from type_helper import TypeHelper
 from tree_walker import TreeWalker

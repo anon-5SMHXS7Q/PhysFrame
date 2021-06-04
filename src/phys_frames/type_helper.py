@@ -1,3 +1,7 @@
+#Copyright 2021 Purdue University, University of Virginia.
+#All rights reserved.
+
+
 from symbol_helper import SymbolHelper
 from frame_type import FrameT
 import debug_data as dd
