@@ -1,1 +1,0 @@
-[samples\AssignmentAddressToInteger\bad.c:3]: (portability) Assigning a pointer to an integer is not portable.
