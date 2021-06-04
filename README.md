@@ -27,10 +27,11 @@ This repository contains the following files and folders:
 
 ### Credits
 
-* [CPPCheck](http://cppcheck.sourceforge.net/)
+* [CPPCheck](https://github.com/danmar/cppcheck)
 * [NetworkX](https://networkx.github.io/)
 * [SciPy](https://www.scipy.org/)
 * [lxml](https://lxml.de/)
+* [cmakelists_parsing](https://github.com/ijt/cmakelists_parsing)
 * [Phys](https://github.com/unl-nimbus-lab/phys)
 
 
