@@ -1,5 +1,5 @@
-def get_sig_implication_rules():
 
+def get_sig_implication_rules():
     sig_pairs = [
         
         (('base_link','base_stabilized'),('base_frame','nav')),
@@ -134,8 +134,8 @@ def get_sig_implication_rules():
 
     return sig_pairs
 
-def get_name_implication_rules():
 
+def get_name_implication_rules():
     name_pairs = [
         
         ('base_link_2_base_stabilized_link','base_2_nav_link'),
@@ -332,8 +332,8 @@ def get_name_implication_rules():
 
     return name_pairs
 
-def get_sig_null_disp_rules():
 
+def get_sig_null_disp_rules():
     null_sigs = {
         
         ('kinect_link','kinect_depth_frame'),
@@ -360,8 +360,8 @@ def get_sig_null_disp_rules():
 
     return null_sigs
 
-def get_name_null_disp_rules():
 
+def get_name_null_disp_rules():
     null_names = {
         
         'world_to_map_broadcaster',
@@ -386,8 +386,8 @@ def get_name_null_disp_rules():
 
     return null_names
 
-def get_sig_null_rot_rules():
 
+def get_sig_null_rot_rules():
     null_rot_sigs = {
         
         ('map','odom'),
@@ -1592,8 +1592,8 @@ def get_sig_null_rot_rules():
 
     return null_rot_sigs
 
-def get_name_null_rot_rules(transform_list):
 
+def get_name_null_rot_rules():
     null_rot_names = {
         
         'offset_publisher',

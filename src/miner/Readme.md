@@ -38,7 +38,7 @@ This will create several SQL tables:
 ## Convention Generator
 The Convention Generator is a Python script (`linterGenerator.py`) which uses the aforementioned SQL tables containing the scored conventions in conjunction with a Jinja template to create a new Python script which can be programmatically used to reference the convention list given a `z_score` threshold.
 
-To make use of `linterGenerator.py`, simply execute the script, which will print the linting script to the console and use a default `z_score` threshold of `1.0` to determine which mined implications are strong enough to support linting for them. The script also takes two optional positional command line args. The first is a path which the linting script will be written to instead of to the console, and the second is a floating point threshold to use for the `z_score` instead of the default. `linter_rules_1.0.py` is provided as an example. It was generated with the following:
+To make use of `linterGenerator.py`, simply execute the script, which will print the linting script to the console and use a default `z_score` threshold of `1.0` to determine which mined implications are strong enough to support linting for them. The script also takes two optional positional command line args. The first is a path which the linting script will be written to instead of to the console, and the second is a floating point threshold to use for the `z_score` instead of the default. `linter_rules.py` is provided as an example. It was generated with the following:
 ```
-python .\linterGenerator.py linter_rules_1.0.py 1.0
+python .\linterGenerator.py linter_rules.py 1.0
 ```

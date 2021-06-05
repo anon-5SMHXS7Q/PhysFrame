@@ -1,5 +1,5 @@
-def get_sig_implication_rules():
 
+def get_sig_implication_rules():
     sig_pairs = [
         {%for sig_pair in sig_implications%}
         (('{{sig_pair.first_parent}}','{{sig_pair.first_child}}'),('{{sig_pair.second_parent}}','{{sig_pair.second_child}}')),
@@ -8,8 +8,8 @@ def get_sig_implication_rules():
 
     return sig_pairs
 
-def get_name_implication_rules():
 
+def get_name_implication_rules():
     name_pairs = [
         {%for name_pair in name_implications%}
         ('{{name_pair.first_name}}','{{name_pair.second_name}}'),
@@ -18,8 +18,8 @@ def get_name_implication_rules():
 
     return name_pairs
 
-def get_sig_null_disp_rules():
 
+def get_sig_null_disp_rules():
     null_sigs = {
         {%for sig in null_sigs%}
         ('{{sig.parent}}','{{sig.child}}'),
@@ -28,8 +28,8 @@ def get_sig_null_disp_rules():
 
     return null_sigs
 
-def get_name_null_disp_rules():
 
+def get_name_null_disp_rules():
     null_names = {
         {%for name in null_names%}
         '{{name}}',
@@ -38,8 +38,8 @@ def get_name_null_disp_rules():
 
     return null_names
 
-def get_sig_null_rot_rules():
 
+def get_sig_null_rot_rules():
     null_rot_sigs = {
         {%for sig in null_rot_sigs%}
         ('{{sig.parent}}','{{sig.child}}'),
@@ -48,8 +48,8 @@ def get_sig_null_rot_rules():
 
     return null_rot_sigs
 
-def get_name_null_rot_rules(transform_list):
 
+def get_name_null_rot_rules():
     null_rot_names = {
         {%for name in null_rot_names%}
         '{{name}}',
