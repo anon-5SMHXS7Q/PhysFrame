@@ -1,4 +1,4 @@
-The following license applies only to our PHYSFRAME tool, NOT to the data.
+The following license applies only to our PHYSFRAME tool, NOT to the dataset.
 
 """
 

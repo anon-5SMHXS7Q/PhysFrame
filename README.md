@@ -22,7 +22,7 @@ This repository contains the following files and folders:
 * Dockerfile : a Docker install file for PHYSFRAME.
 * requirements.txt : List of python dependencies required by PHYSFRAME. Referenced by the Dockerfile.
 * src/ : The python source code for PHYSFRAME, files containing implicit frame conventions.
-* data/ : C/C++ projects used to evaluate PHYSFRAME.
+* data/ : Dataset of C/C++ projects used to evaluate PHYSFRAME.
 
 
 ### Credits
