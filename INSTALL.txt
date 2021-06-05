@@ -4,6 +4,11 @@ FSE2021 Artifact Submission INSTALL
 
 
 STEP ONE:
+Clone the artifact repository, or Download a ZIP file of the repository and unzip it.
+       git clone https://github.com/anon-5SMHXS7Q/PhysFrame
+
+
+STEP TWO:
 INSTALL CppCheck 1.80 in the root directory of the artifact repository:
 
 1. Download CppCheck 1.80 version source code zip from https://github.com/danmar/cppcheck/tree/1.80
@@ -15,12 +20,13 @@ INSTALL CppCheck 1.80 in the root directory of the artifact repository:
 You should see 'cppcheck' binary in the 'cppcheck-1.80' directory.
 
 
-STEP TWO:
-Install Docker. The Dockerfile for physframe has been tested with Ubuntu 16.04.
-
-
 STEP THREE:
-From the command line, build physframe with docker:
+Install Docker. The Dockerfile for physframe has been tested with docker version 18.09.7 on Ubuntu 16.04.
+
+
+STEP FOUR:
+From the command line, move back to the root directory of the artifact repository,  
+and build physframe with docker:
 
        docker build . -t physframe
 

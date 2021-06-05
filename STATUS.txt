@@ -10,5 +10,5 @@ The tool can be reused both on the data provided in the ./data/ directory as wel
 
 
 Available:
-The artifact (software + data) is publicly available at https://git.io/JG3ok  (LINK MIGHT UNMASK AUTHORS!!!).
+The artifact (software + data) is publicly available at https://git.io/JG3ok
 ARTIFACT REVIEWER NOTE: We will replace the anonymous GitHub account with our own after the review period.

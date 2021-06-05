@@ -14,9 +14,9 @@ PHYSFRAME is a static analysis tool for detecting reference frame inconsistencie
 This repository contains the following files and folders:
 
 * README.md : This file. 
-* LICENSE.txt : BSD-2-Clause license. **TODO**
+* LICENSE.txt : BSD 2-Clause license.
 * STATUS.txt : Describes the ACM artifact badges sought for this artifact.
-* REQUIREMENTS.txt : Describes the hardware and software requirements.
+* REQUIREMENTS.md : Describes the hardware and software requirements.
 * INSTALL.txt : Describes how to install PHYSFRAME using Docker and a minimal working example.
 * HOWTO.txt: Describes how to use PHYSFRAME with the provided data.
 * Dockerfile : a Docker install file for PHYSFRAME.

@@ -1,12 +1,23 @@
 HOW TO RUN:
 
 
-First, install PHYSFRAME using the instructions in INSTALL.txt.
+First,
+
+     (a) Install PHYSFRAME using the instructions in INSTALL.txt.
+
+     (b) From the command line, navigate to the '/data' directory, and 
+         extract ROS project directories from the '.tar.gz' files in '/data'.
+         Replace <TAR-GZ-FILE> with the name of a .tar.gz file in the below command:
+
+             tar -xzf <TAR-GZ-FILE>
+
+         You should see ROS project directories in '/data'.
 
 
 CASE-1: Find Inconsistencies:
 
-     From the command line, run physframe docker image on every ROS project directory in '/data'.
+     From the command line, navigate to the root directory of the artifact repository, and 
+     run physframe docker image on every ROS project directory in '/data'.
      Replace <ROS-PROJECT-DIR> with the name of a project directory in the below command:
 
      docker run -v "$(pwd)"/data/<ROS-PROJECT-DIR>:/<ROS-PROJECT-DIR> physframe /<ROS-PROJECT-DIR>
