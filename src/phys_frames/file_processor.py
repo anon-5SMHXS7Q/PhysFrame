@@ -310,8 +310,9 @@ class FileProcessor:
         #    print("Attibute error")
 
         except Exception as error:
-            traceback.print_exc()
-            print(error)
+            #traceback.print_exc()
+            #print(error)
+            print("EXCEPTION: CMake Parse error")
 
 
     def find_files(self, directory, pattern):

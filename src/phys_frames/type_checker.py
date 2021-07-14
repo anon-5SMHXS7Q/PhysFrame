@@ -556,7 +556,8 @@ class TypeChecker:
                     if isinstance(frame1[-1], list) or isinstance(frame2[-1], list):
                         continue
 
-                    if self.th.is_unknown_frame_type_elem(frame1[-1]) or self.th.is_unknown_frame_type_elem(frame2[-1]):
+                    if self.th.is_unknown_frame_type_elem(frame1[-1]) or self.th.is_unknown_frame_type_elem(frame2[-1]) or\
+                            self.th.is_default_frame_type([frame1[-1], frame2[-1]]):
                         continue
                    
                     if len(frame)==2 and frame1[-1].id and frame2[-1].id and frame1[-1].id == frame2[-1].id:
@@ -742,6 +743,7 @@ class TypeChecker:
 
                         if tf_frame[0] and tf_frame[1] and \
                                 (not self.th.is_unknown_frame_type_elem(tf_frame[0])) and (not self.th.is_unknown_frame_type_elem(tf_frame[1])) and \
+                                self.th.is_non_default_frame_type(tf_frame) and \
                                 tf_frame[0].id and tf_frame[1].id and tf_frame[0].id == tf_frame[1].id:
                             self.report_transform_error(FrameErrorTypes.INVALID_FRAMES, 
                                                         [tf_frame[0], tf_frame[1], 'SendTransform'],
